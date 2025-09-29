@@ -32,3 +32,33 @@ formulario.addEventListener("submit", function(event) {
   alert("¡Formulario enviado correctamente!");
   formulario.reset();
 });
+
+// Animación al hacer scroll
+const faders = document.querySelectorAll(".fade-in");
+
+const aparecer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, { threshold: 0.2 });
+
+faders.forEach(fader => {
+  aparecer.observe(fader);
+});
+
+// Botón arriba
+const btnArriba = document.getElementById("btnArriba");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    btnArriba.style.display = "block";
+  } else {
+    btnArriba.style.display = "none";
+  }
+});
+
+btnArriba.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
