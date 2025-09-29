@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Vladimir Gómez Sepúlveda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Inicio -->
+  <section id="inicio" class="hero">
+    <img src="288px-Eggman.png" alt="Foto de Vladimir" class="perfil">
+    <h1>Vladimir Gómez Sepúlveda</h1>
+    <p>Estudiante del CASD | Apasionado por la robótica y la electrónica</p>
+  </section>
+
+  <!-- Sección Sobre mí -->
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un joven de 17 años que disfruta jugar videojuegos, aprender sobre electrónica y cocinar.
+      Me gusta tomar café en un día soleado y me encantan los libros de ficción.
+      Mi pasión es la robótica y algún día quiero crear robots que ayuden a las personas.
+    </p>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos">
+    <h2>Mis Proyectos</h2>
+    <button id="toggleProyecto">Mostrar/Ocultar Proyecto</button>
+    <div id="proyectoContenido">
+      <h3>Robot Sirviente</h3>
+      <p>
+        Mi meta es crear un robot sirviente que pueda asistir a cualquier persona,
+        sin importar su estatus o capacidades.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Tel: 333 640 5384</p>
+    <p>Email: <a href="mailto:gomezsepulvedavladimir@gmail.com">gomezsepulvedavladimir@gmail.com</a></p>
+    <p>
+      <a href="https://www.tiktok.com/@userfhpe5kzamu" target="_blank">TikTok</a> |
+      <a href="https://www.instagram.com/gomezsepulvedavladimir" target="_blank">Instagram</a>
+    </p>
+
+    <!-- Formulario -->
+    <form id="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 - Portafolio de Vladimir Gómez Sepúlveda</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
